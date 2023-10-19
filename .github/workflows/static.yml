@@ -1,5 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy url redirects.
+name: Deploy url redirect
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,24 +30,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
         
-        #generate our out directory
+      # Generate our out directory by running node index.js
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.8.1
         with:
           node-version: v20.8.0
-      - run: | 
-            npm install
-            node index.js
-
+      - run: |
+          npm install
+          node index.js
         
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # publish out directory to github pages
+          # Publish the out directory to GitHub Pages
           path: 'out'
       - name: Deploy to GitHub Pages
         id: deployment
