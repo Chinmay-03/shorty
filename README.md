@@ -4,10 +4,10 @@ A simple and efficient Link Shortener service built with Node.js and hosted on G
 
 ## Features 🌟
 
-- Shorten long URLs into easy-to-share links.
-- Customizable short link aliases.
-- Quick and seamless redirection to original URLs.
-- Lightweight and fast service.
+- Shorten long URLs into easy-to-share links. *
+- Customizable short link aliases. *
+- Quick and seamless redirection to original URLs. *
+- Lightweight and fast service. *
 
 ## Tech Stack 💻
 
